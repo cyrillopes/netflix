@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <section class="containers">
+        <div class="head">
+            <img src="logo.png" alt="logo">
+            <div class="dropdown ">
+                <button class="btn  dropdown-toggle text-white border border-1 rounded-0" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-globe2" viewBox="0 0 16 16">
+                        <path
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                    </svg> <span> English</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item bg-white text-dark" href="#">English</a></li>
+                    <li><a class="dropdown-item  bg-white text-dark" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <a href="#">Sign up</a>
+        </div>
+    </section>
+    <section class="banner">
+        <img src="netflix-bg.jpg" alt="background" class="fit">
+        <div class="box">
+            <div class="heading">
+                <h2>Unlimited movies, TV shows and more.</h2>
+                <h5>Watch anywhere. Cancel anytime.</h5>
+                <p> Ready to watch? Enter your email to create or restart your membership.
+                </p>
+            </div>
+            <div class="input-group mb-3 get-started">
+                <input type="text" class="form-control rounded-0" placeholder="Email address"
+                    aria-describedby="basic-addon2">
+                <button class="input-group-text rounded-0 text-center">Get Started ></button>
+            </div>
+        </div>
+    </section>
+    <section class="part1">
+        <div class="talk">
+            <h1>Enjoy on your TV.</h1>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+            </p>
+        </div>
+        <div class="img">
+            <img src="part1.png" alt="">
+        </div>
+    </section>
+    <section class=" part1 part2">
+        <div class="img">
+            <img src="part2.jpg" alt="">
+        </div>
+        <div class="talk">
+            <h1>Download your shows to watch offline.
+            </h1>
+            <p>Save your favourites easily and always have something to watch.
+
+            </p>
+        </div>
+    </section>
+    <section class="part1">
+        <div class="talk">
+            <h1>Watch everywhere.</h1>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+            </p>
+        </div>
+        <div class="img">
+            <img src="part3.png" alt="">
+        </div>
+    </section>
+    <section class=" part1 part2">
+        <div class="img">
+            <img src="part4.png" alt="">
+        </div>
+        <div class="talk">
+            <h1>Create profiles for children. </h1>
+            <p>Send children on adventures with their favourite characters in a space made just for them—free with your
+                membership.
+
+            </p>
+        </div>
+    </section>
+    <section class="list ">
+        <div class="question text-header ">Frequently Asked Questions
+        </div>
+        <div class="accordion-menu">
+            <div class="item" id="item1">
+                <a href="#item1" class="title">
+                    <span>What is Netflix?</span>
+                    <i class="icon"></i>
+                </a>
+                <p class="text">
+                    Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                    documentaries and more – on thousands of internet-connected devices.
+                    <br><br>
+                    You can watch as much as you want, whenever you want, without a single ad – all for one low monthly
+                    price. There's always something new to discover, and new TV shows and movies are added every week!
+
+                </p>
+            </div>
+            <div class="item" id="item2">
+                <a href="#item2" class="title">
+                    <span>How much does Netflix cost?</span>
+                    <i class="icon"></i>
+                </a>
+                <p class="text">
+                    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+                    monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.
+                </p>
+            </div>
+            <div class="item" id="item3">
+                <a href="#item3" class="title">
+                    <span>Where can I watch?</span>
+                    <i class="icon"></i>
+                </a>
+                <p class="text">
+                    Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                    netflix.com from your personal computer or on any internet-connected device that offers the Netflix
+                    app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+
+                    <br><br>
+                    You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads
+                    to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                </p>
+            </div>
+            <div class="item" id="item4">
+                <a href="#item4" class="title">
+                    <span>How do I cancel?</span>
+                    <i class="icon"></i>
+                </a>
+                <p class="text">
+                    Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your
+                    account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                </p>
+            </div>
+            <div class="item" id="item5">
+                <a href="#item5" class="title">
+                    <span>What can I watch on Netflix?</span>
+                    <i class="icon"></i>
+                </a>
+                <p class="text">
+                    Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
+                    Netflix originals, and more. Watch as much as you want, anytime you want.
+                </p>
+            </div>
+            <div class="item" id="item6">
+                <a href="#item6" class="title">
+                    <span>Is Netflix good for kids?</span>
+                    <i class="icon"></i>
+                </a>
+                <p class="text">
+                    The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+                    family-friendly TV shows and films in their own space.
+                    <br><br>
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                    content kids can watch and block specific titles you don’t want kids to see.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="bottom-search">
+        <div class="text-sub-content text-white fs-5 mt-3">
+            Ready to watch? Enter your email to create or restart your membership.
+        </div>
+        <div class="input-group mb-3 get-started mt-3 pe-5 m">
+            <input type="text" class="form-control rounded-0" placeholder="Email address"
+                aria-describedby="basic-addon2">
+            <button class="input-group-text rounded-0 text-center">Get Started ></button>
+        </div>
+
+    </section> -->
+    <div
+        class="input-group mb-3 get-started bottom-search-input w-75 align-content-center justify-content-center flex-row mt-5 ps-5">
+        <input type="text" class="form-control rounded-0" placeholder="Email address" aria-describedby="basic-addon2">
+        <button class="input-group-text rounded-0 text-center">Get Started ></button>
+    </div>
+    <div class="bg-dark divider mt-5">
+        <hr class="division m-0 " />
+    </div>
+    <section class="footer mt-5 text-secondary">
+        <p class="my-5 fs-6">Questions? Call 000-800-040-1843</p>
+        <div class="row">
+            <div class="col-md-3">
+                <p>FAQ</p>
+                <p>Investor Relations</p>
+                <p>Privacy</p>
+                <p>Speed Test</p>
+            </div>
+            <div class="col-md-3">
+                <p>Help Centre</p>
+                <p>Jobs</p>
+                <p>Cookie Preferences</p>
+                <p>Legal Notices</p>
+            </div>
+            <div class="col-md-3">
+                <p>Account</p>
+                <p>Ways to Watch</p>
+                <p>Corporate Information</p>
+                <p>Only on Netflix</p>
+            </div>
+            <div class="col-md-3">
+                <p>Media Centre</p>
+                <p>Terms of Use</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+        <div class="dropdown mt-4">
+            <button class="btn btn-lg  dropdown-toggle text-secondary border-secondary rounded-0" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe2"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                </svg> <span> English</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+        <p class="my-4">Netflix India</p>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: black;
+}
+.containers .head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+  z-index: 10000;
+}
+.containers .head img {
+  width: 13%;
+}
+.containers .head .dropdown {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  z-index: 10000;
+}
+
+.containers .head a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #e50914;
+  padding: 8px 18px;
+  border-radius: 5px;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to bottom, #000, transparent);
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to top, #000, transparent);
+}
+.banner .fit {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.banner .box {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.banner .box .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner .box .heading h2 {
+  font-size: 3.125rem;
+  color: #fff;
+  letter-spacing: 2px;
+  width: 80%;
+  font-weight: bold;
+}
+.banner .box .heading h5 {
+  font-size: 1.625rem;
+  color: #fff;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+.banner .box .heading p {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  padding: 0 0;
+  padding-bottom: 20px;
+}
+.banner .box .search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.banner .box .search input {
+  font-size: 16px;
+  border: #8c8c8c solid 1px;
+  outline: none;
+  color: #000;
+  border-radius: 2px;
+  padding: 10px 10px 0 0;
+  min-width: 400px;
+  height: 60px;
+  align-items: center;
+}
+.banner .box .search a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  border-radius: 2px;
+  background-color: #e50914;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  font-size: 1.625rem;
+  height: 60px;
+  min-width: 310px;
+  padding: 0 30px;
+}
+.get-started {
+  width: 100%;
+}
+.get-started > input {
+  height: 60px;
+}
+.get-started > button {
+  width: 35%;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #e50914;
+  border: #e50914;
+}
+.part1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 4rem;
+  border-bottom: 0.6rem solid #111;
+}
+.part1 .talk {
+  width: 40%;
+}
+.part1 .img {
+  width: 45%;
+}
+.part1 .img img {
+  width: 100%;
+}
+.part1 .talk h1 {
+  font-size: 3.3rem;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+.part1 .talk p {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.part2 .talk {
+  width: 48%;
+}
+.question {
+  padding: 8% 5%;
+  color: #fff;
+  font-size: 3rem;
+}
+.list,
+.bottom-search {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.list h1 {
+  color: #fff;
+  font-size: 3rem;
+  padding: 3rem 0 4rem 0;
+}
+.title {
+  background: #303030;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.title:hover {
+  color: #fff;
+}
+.icon {
+  width: 20px;
+  position: relative;
+}
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  top: -1.5px;
+}
+.icon::after {
+  transform: rotate(90deg);
+  transition: 0.5s linear;
+}
+.text {
+  background: #303030;
+  line-height: 35px;
+  margin: 3px 0;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 400;
+  height: 0;
+  opacity: 0;
+}
+.item {
+  margin-top: 8px;
+}
+.item:target .text {
+  height: auto;
+  opacity: 1;
+  padding: 4%;
+  margin: 0;
+}
+.item:target .icon::after {
+  transform: rotateY(90deg);
+}
+.bottom-search {
+  margin-top: 5%;
+}
+.footer {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+.bottom-search-input {
+  margin-left: 11%;
+}
+
+@media screen and (max-width: 787px) {
+  .containers .head {
+    padding: 10px 50px;
+  }
+  .containers .head .dropdown {
+    left: 65%;
+  }
+  .containers .head img {
+    width: 20%;
+  }
+  .banner .box {
+    width: 90%;
+  }
+  .banner .box .heading h2 {
+    font-size: 3.1rem;
+    letter-spacing: 1.5px;
+    width: 100%;
+  }
+  .banner .box .heading h5 {
+    font-size: 1.4rem;
+  }
+  .banner .box .heading p {
+    font-size: 1.1rem;
+    padding-bottom: 17px;
+  }
+  .get-started {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .get-started > input {
+    height: 50px;
+  }
+  .get-started > button {
+    width: 30%;
+    font-size: 1.2rem;
+  }
+  .part1 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .part1 .talk {
+    width: 80%;
+  }
+  .part1 .img {
+    width: 70%;
+    margin-bottom: 5%;
+  }
+  .part1 .talk h1 {
+    font-size: 3.2 rem;
+    letter-spacing: 1.5px;
+    padding-bottom: 5px;
+  }
+  .part1 .talk p {
+    font-size: 1.5rem;
+  }
+  .part2 .talk {
+    width: 80%;
+    margin-top: 5%;
+  }
+  .list,
+  .bottom-search {
+    width: 80%;
+  }
+  .question {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 496px) {
+  .containers .head {
+    padding: 15px 50px;
+  }
+  .containers .head .dropdown {
+    left: 45%;
+  }
+  .containers .head img {
+    width: 25%;
+  }
+  .banner .box {
+    width: 90%;
+  }
+  .banner .box .heading h2 {
+    font-size: 2.1rem;
+    letter-spacing: 1.5px;
+    width: 100%;
+  }
+  .banner .box .heading h5 {
+    font-size: 1.2rem;
+  }
+  .banner .box .heading p {
+    font-size: 0.8rem;
+    padding-bottom: 17px;
+  }
+  .get-started {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .get-started > input {
+    height: 40px;
+  }
+  .get-started > button {
+    width: 30%;
+    font-size: 0.8rem;
+  }
+  .part1 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .part1 .talk {
+    width: 80%;
+  }
+  .part1 .img {
+    width: 70%;
+    margin-bottom: 5%;
+  }
+  .part1 .talk h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    padding-bottom: 5px;
+  }
+  .part1 .talk p {
+    font-size: 1rem;
+  }
+  .part2 .talk {
+    width: 80%;
+    margin-top: 5%;
+  }
+  .list,
+  .bottom-search {
+    width: 80%;
+  }
+  .bottom-search-input {
+    margin-left: 8%;
+  }
+  .bottom-search-input button {
+    width: 30%;
+  }
+  .question {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .item span {
+    font-size: 1rem;
+  }
+}
